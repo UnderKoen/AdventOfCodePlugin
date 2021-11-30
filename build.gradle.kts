@@ -22,6 +22,7 @@ version = properties("pluginVersion")
 // Configure project's dependencies
 repositories {
     mavenCentral()
+    google()
 }
 
 // Configure Gradle IntelliJ Plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
@@ -46,6 +47,11 @@ qodana {
     reportPath.set(projectDir.resolve("build/reports/inspections").canonicalPath)
     saveReport.set(true)
     showReport.set(System.getenv("QODANA_SHOW_REPORT")?.toBoolean() ?: false)
+}
+
+dependencies {
+    compileOnly("org.projectlombok", "lombok", "1.18.22")
+    annotationProcessor("org.projectlombok", "lombok", "1.18.22")
 }
 
 tasks {

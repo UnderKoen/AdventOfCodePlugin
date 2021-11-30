@@ -1,18 +1,12 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.underkoen.adventofcodeplugin</id>
-    <name>AdventOfCodePlugin</name>
-    <vendor>underkoen</vendor>
+    <id>nl.underkoen.jetbrains.adventofcode</id>
+    <name>AdventOfCode</name>
+    <vendor url="underkoen.nl" email="koen@underkoen.nl">UnderKoen</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.underkoen.adventofcodeplugin.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.underkoen.adventofcodeplugin.services.MyProjectService"/>
+        <toolWindow id="AdventOfCode" secondary="true" icon="AllIcons.Toolwindows.Documentation" anchor="right"
+                    factoryClass="nl.underkoen.jetbrains.adventofcode.toolwindows.AdventOfCodeViewerFactory"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.underkoen.adventofcodeplugin.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>

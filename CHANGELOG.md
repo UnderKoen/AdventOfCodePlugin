@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# AdventOfCodePlugin Changelog
+# AdventOfCode Changelog
 
 ## [Unreleased]
 ### Added
