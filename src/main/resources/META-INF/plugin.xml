@@ -6,7 +6,11 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="AdventOfCode" secondary="true" icon="AllIcons.Toolwindows.Documentation" anchor="right"
+        <toolWindow id="AdventOfCode" secondary="true" icon="nl.underkoen.jetbrains.adventofcode.general.components.Icons.AOC_FILE" anchor="right"
                     factoryClass="nl.underkoen.jetbrains.adventofcode.toolwindows.AdventOfCodeViewerFactory"/>
+        <virtualFileSystem id="AdventOfCode" implementationClass="nl.underkoen.jetbrains.adventofcode.general.AOCTreeModal"
+                           physical="false"/>
+        <fileEditorProvider implementation="nl.underkoen.jetbrains.adventofcode.file.AOCFileEditorProvider"/>
+        <fileIconProvider implementation="nl.underkoen.jetbrains.adventofcode.file.AOCFileIconProvider"/>
     </extensions>
 </idea-plugin>

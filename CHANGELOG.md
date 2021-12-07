@@ -1,7 +1,6 @@
-<!-- Keep a Changelog guide -> https://keepachangelog.com -->
-
 # AdventOfCode Changelog
 
 ## [Unreleased]
 ### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
+- Tool window to view all challenges
+- Display for when opening a challenge

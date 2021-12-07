@@ -1,0 +1,40 @@
+package nl.underkoen.jetbrains.adventofcode.file;
+
+import com.intellij.openapi.fileTypes.FileType;
+import com.intellij.openapi.util.NlsContexts;
+import com.intellij.openapi.util.NlsSafe;
+import nl.underkoen.jetbrains.adventofcode.general.components.Icons;
+import org.jetbrains.annotations.NonNls;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import javax.swing.*;
+
+public class AOCFileType implements FileType {
+    public static AOCFileType fileType = new AOCFileType();
+
+    @Override
+    public @NonNls @NotNull String getName() {
+        return "AdventOfCode";
+    }
+
+    @Override
+    public @NlsContexts.Label @NotNull String getDescription() {
+        return "AdventOfCode";
+    }
+
+    @Override
+    public @NlsSafe @NotNull String getDefaultExtension() {
+        return "aoc";
+    }
+
+    @Override
+    public @Nullable Icon getIcon() {
+        return Icons.AOC_FILE;
+    }
+
+    @Override
+    public boolean isBinary() {
+        return false;
+    }
+}

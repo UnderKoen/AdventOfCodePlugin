@@ -1,46 +1,39 @@
 package nl.underkoen.jetbrains.adventofcode.general.tree;
 
-import lombok.RequiredArgsConstructor;
-
 import javax.swing.tree.TreeNode;
 import java.util.Enumeration;
 
-@RequiredArgsConstructor
-public class TreeLeaf<T extends TreeNode> implements TreeNode {
-    protected final T parent;
-
+public interface TreeLeaf<T extends TreeNode> extends TreeNode {
     @Override
-    public TreeNode getChildAt(int childIndex) {
+    default TreeNode getChildAt(int childIndex) {
         return null;
     }
 
     @Override
-    public int getChildCount() {
+    default int getChildCount() {
         return 0;
     }
 
     @Override
-    public TreeNode getParent() {
-        return parent;
-    }
+    T getParent();
 
     @Override
-    public int getIndex(TreeNode node) {
+    default int getIndex(TreeNode node) {
         return -1;
     }
 
     @Override
-    public boolean getAllowsChildren() {
+    default boolean getAllowsChildren() {
         return false;
     }
 
     @Override
-    public boolean isLeaf() {
+    default boolean isLeaf() {
         return true;
     }
 
     @Override
-    public Enumeration<? extends TreeNode> children() {
+    default Enumeration<? extends TreeNode> children() {
         return null;
     }
 }
