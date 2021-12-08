@@ -25,7 +25,7 @@ public class AdventOfCodeViewer {
         (new DoubleClickListener() {
             @Override
             protected boolean onDoubleClick(@NotNull MouseEvent event) {
-                int row = list.getRowForLocation(event.getX(), event.getY());
+                int row = list.getClosestRowForLocation(event.getX(), event.getY());
                 if (row == -1) return false;
                 Object obj = list.getPathForRow(row).getLastPathComponent();
                 if (obj instanceof Day) {
