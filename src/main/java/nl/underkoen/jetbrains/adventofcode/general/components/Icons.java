@@ -7,5 +7,5 @@ import javax.swing.*;
 public class Icons {
     private Icons() {};
 
-    public static final Icon AOC_FILE = IconLoader.getIcon("/icons/aoc.png", Icons.class);
+    public static final Icon AOC_FILE = IconLoader.getIcon("/icons/aoc.svg", Icons.class);
 }
