@@ -1,8 +1,8 @@
 # AdventOfCode
 
 ![Build](https://github.com/UnderKoen/AdventOfCodePlugin/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/18178-adventofcode.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/18178-adventofcode.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/18178-adventofcode.svg)](https://plugins.jetbrains.com/plugin/18178-adventofcode)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/18178-adventofcode.svg)](https://plugins.jetbrains.com/plugin/18178-adventofcode)
 
 <!-- Plugin description -->
 This plugin makes it so that you can view your [AdventOfCode](https://adventofcode.com/) challenges right in the editor! 
