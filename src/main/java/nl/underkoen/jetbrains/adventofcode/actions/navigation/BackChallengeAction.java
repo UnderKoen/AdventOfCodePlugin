@@ -5,8 +5,6 @@ import com.intellij.openapi.actionSystem.Presentation;
 import nl.underkoen.jetbrains.adventofcode.actions.BrowserAction;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Objects;
-
 public class BackChallengeAction extends BrowserAction {
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {

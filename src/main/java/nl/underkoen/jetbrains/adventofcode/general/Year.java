@@ -104,4 +104,19 @@ public class Year extends VirtualDirectory implements TreeNode {
     public Enumeration<? extends TreeNode> children() {
         return days.elements();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Year)) return false;
+
+        Year year1 = (Year) o;
+
+        return getYear() == year1.getYear();
+    }
+
+    @Override
+    public int hashCode() {
+        return getYear();
+    }
 }

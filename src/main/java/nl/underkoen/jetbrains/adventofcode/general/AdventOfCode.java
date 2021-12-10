@@ -14,7 +14,7 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 public class AdventOfCode extends VirtualDirectory implements TreeNode {
-    @Getter private AOCTreeModal root;
+    @Getter private final AOCTreeModal root;
     private final Vector<Year> years;
 
     public AdventOfCode(AOCTreeModal root) {

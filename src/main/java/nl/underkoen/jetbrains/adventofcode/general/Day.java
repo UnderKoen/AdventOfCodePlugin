@@ -124,4 +124,22 @@ public class Day extends VirtualFile implements TreeLeaf<Year> {
     public @NotNull FileType getFileType() {
         return AOCFileType.fileType;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Day)) return false;
+
+        Day day1 = (Day) o;
+
+        if (getDay() != day1.getDay()) return false;
+        return getYear() != null ? getYear().equals(day1.getYear()) : day1.getYear() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getDay();
+        result = 31 * result + (getYear() != null ? getYear().hashCode() : 0);
+        return result;
+    }
 }

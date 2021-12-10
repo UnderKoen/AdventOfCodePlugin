@@ -2,11 +2,8 @@ package nl.underkoen.jetbrains.adventofcode.actions.zoom;
 
 import com.intellij.ide.util.PropertiesComponent;
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.ui.playback.commands.KeyStrokeMap;
 import nl.underkoen.jetbrains.adventofcode.actions.BrowserAction;
 import org.jetbrains.annotations.NotNull;
-
-import java.awt.event.KeyEvent;
 
 public class ZoomOutChallengeAction extends BrowserAction {
     @Override

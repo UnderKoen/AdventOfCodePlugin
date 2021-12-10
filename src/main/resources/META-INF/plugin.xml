@@ -8,7 +8,7 @@
     <actions>
         <group id="aoc">
             <group id="aoc-challenge">
-                <group id = "aoc-challenge-navigation">
+                <group id="aoc-challenge-navigation">
                     <action class="nl.underkoen.jetbrains.adventofcode.actions.navigation.HomeChallengeAction"
                             icon="AllIcons.Nodes.HomeFolder"
                             id="aoc-challenge-navigation-home" text="To Challenge"/>
@@ -38,6 +38,11 @@
                             icon="AllIcons.General.ActualZoom"
                             id="aoc-challenge-zoom-reset" text="Reset Zoom"/>
                 </group>
+            </group>
+            <group id="aoc-challenges">
+                <action class="nl.underkoen.jetbrains.adventofcode.actions.challenges.RefreshChallengesAction"
+                        icon="AllIcons.Actions.Refresh"
+                        id="aoc-challenges-challenges-refresh" text="Refresh"/>
             </group>
         </group>
     </actions>

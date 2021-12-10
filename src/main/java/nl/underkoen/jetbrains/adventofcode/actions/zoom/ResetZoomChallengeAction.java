@@ -2,7 +2,6 @@ package nl.underkoen.jetbrains.adventofcode.actions.zoom;
 
 import com.intellij.ide.util.PropertiesComponent;
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.diagnostic.Logger;
 import nl.underkoen.jetbrains.adventofcode.actions.BrowserAction;
 import org.jetbrains.annotations.NotNull;
 
