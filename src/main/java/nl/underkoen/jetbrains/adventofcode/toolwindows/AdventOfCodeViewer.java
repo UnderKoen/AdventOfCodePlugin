@@ -1,6 +1,5 @@
 package nl.underkoen.jetbrains.adventofcode.toolwindows;
 
-import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindow;
@@ -15,12 +14,11 @@ import javax.swing.*;
 import java.awt.event.MouseEvent;
 
 public class AdventOfCodeViewer {
-    private static final Logger log = Logger.getInstance(AdventOfCodeViewer.class);
     private final Tree list;
 
     public AdventOfCodeViewer(Project project, ToolWindow toolWindow) {
         list = new Tree(new AOCTreeModal());
-        new AdventOfCodeTreeCellRenderer(list);
+        list.setCellRenderer(new AdventOfCodeTreeCellRenderer());
 
         (new DoubleClickListener() {
             @Override

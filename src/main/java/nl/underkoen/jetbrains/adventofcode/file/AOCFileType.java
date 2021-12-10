@@ -1,6 +1,7 @@
 package nl.underkoen.jetbrains.adventofcode.file;
 
 import com.intellij.openapi.fileTypes.FileType;
+import com.intellij.openapi.project.DumbAware;
 import com.intellij.openapi.util.NlsContexts;
 import com.intellij.openapi.util.NlsSafe;
 import nl.underkoen.jetbrains.adventofcode.general.components.Icons;
@@ -10,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 
-public class AOCFileType implements FileType {
+public class AOCFileType implements FileType, DumbAware {
     public static AOCFileType fileType = new AOCFileType();
 
     @Override

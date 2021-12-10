@@ -5,10 +5,49 @@
 
     <depends>com.intellij.modules.platform</depends>
 
+    <actions>
+        <group id="aoc">
+            <group id="aoc-challenge">
+                <group id = "aoc-challenge-navigation">
+                    <action class="nl.underkoen.jetbrains.adventofcode.actions.navigation.HomeChallengeAction"
+                            icon="AllIcons.Nodes.HomeFolder"
+                            id="aoc-challenge-navigation-home" text="To Challenge"/>
+                    <action class="nl.underkoen.jetbrains.adventofcode.actions.navigation.BackChallengeAction"
+                            icon="AllIcons.Actions.Back"
+                            id="aoc-challenge-navigation-back" use-shortcut-of="Back" text="Back"/>
+                    <action class="nl.underkoen.jetbrains.adventofcode.actions.navigation.ForwardChallengeAction"
+                            icon="AllIcons.Actions.Forward"
+                            id="aoc-challenge-navigation-forward" use-shortcut-of="Forward" text="Forward"/>
+                    <action class="nl.underkoen.jetbrains.adventofcode.actions.navigation.RefreshChallengeAction"
+                            icon="AllIcons.Actions.Refresh"
+                            id="aoc-challenge-navigation-refresh" use-shortcut-of="Refresh" text="Refresh"/>
+                </group>
+                <separator/>
+                <group id="aoc-challenge-zoom">
+                    <action class="nl.underkoen.jetbrains.adventofcode.actions.zoom.ZoomOutChallengeAction"
+                            icon="AllIcons.General.ZoomOut"
+                            id="aoc-challenge-zoom-out" text="Zoom Out">
+                        <keyboard-shortcut keymap="$default" first-keystroke="control MINUS"/>
+                    </action>
+                    <action class="nl.underkoen.jetbrains.adventofcode.actions.zoom.ZoomInChallengeAction"
+                            icon="AllIcons.General.ZoomIn"
+                            id="aoc-challenge-zoom-in" text="Zoom In">
+                        <keyboard-shortcut keymap="$default" first-keystroke="control EQUALS"/>
+                    </action>
+                    <action class="nl.underkoen.jetbrains.adventofcode.actions.zoom.ResetZoomChallengeAction"
+                            icon="AllIcons.General.ActualZoom"
+                            id="aoc-challenge-zoom-reset" text="Reset Zoom"/>
+                </group>
+            </group>
+        </group>
+    </actions>
+
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="AdventOfCode" secondary="true" icon="nl.underkoen.jetbrains.adventofcode.general.components.Icons.AOC_FILE" anchor="right"
+        <toolWindow id="AdventOfCode" secondary="true"
+                    icon="nl.underkoen.jetbrains.adventofcode.general.components.Icons.AOC_FILE" anchor="right"
                     factoryClass="nl.underkoen.jetbrains.adventofcode.toolwindows.AdventOfCodeViewerFactory"/>
-        <virtualFileSystem id="AdventOfCode" implementationClass="nl.underkoen.jetbrains.adventofcode.general.AOCTreeModal"
+        <virtualFileSystem id="AdventOfCode"
+                           implementationClass="nl.underkoen.jetbrains.adventofcode.general.AOCTreeModal"
                            physical="false"/>
         <fileEditorProvider implementation="nl.underkoen.jetbrains.adventofcode.file.AOCFileEditorProvider"/>
         <fileIconProvider implementation="nl.underkoen.jetbrains.adventofcode.file.AOCFileIconProvider"/>
