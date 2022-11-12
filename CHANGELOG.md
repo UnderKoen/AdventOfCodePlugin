@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 - Fix error on install
-- Removed constraint on editor version
+- Added support for up to 2022.2.*
 
 ## [0.0.1]
 ### Added
