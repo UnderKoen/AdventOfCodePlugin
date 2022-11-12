@@ -52,6 +52,7 @@
                     icon="nl.underkoen.jetbrains.adventofcode.general.components.Icons.AOC_FILE" anchor="right"
                     factoryClass="nl.underkoen.jetbrains.adventofcode.toolwindows.AdventOfCodeViewerFactory"/>
         <virtualFileSystem id="AdventOfCode"
+                           key="AOCTreeModal"
                            implementationClass="nl.underkoen.jetbrains.adventofcode.general.AOCTreeModal"
                            physical="false"/>
         <fileEditorProvider implementation="nl.underkoen.jetbrains.adventofcode.file.AOCFileEditorProvider"/>
