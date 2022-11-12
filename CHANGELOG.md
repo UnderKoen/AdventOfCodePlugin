@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 - Fix error on install
+- Removed constraint on editor version
 
 ## [0.0.1]
 ### Added
